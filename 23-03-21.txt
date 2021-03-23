@@ -1,0 +1,28 @@
+https://www.geeksforgeeks.org/sorting-algorithms/
+
+1) Selection sort
+    - Minimum of aage dalte jate ha
+2) Bubble sort
+    - n-1 times wrong adjacent ko swap krte ha(ek tarah se sabse bara wala last mein jate jata ha har iteration mein) 
+3) Insertion sort
+    - assume krte ha aage se kuch length ka array sorted hai (initially one element only) and then sorted array ke just bad wala element
+      agar i index pe hai you for(int j=i-1;j>=0;j--) check krte ha jab tak a[j]>a[i] mil rha ha us element ko aage shift krte jate ha
+      aur jagah kahta, hua vahan pe ith wale element ko dal dete ha
+4) Merge sort
+    - divide and conquer approach ha, ismein 2 part mein array ko divide krte ha dono pe mergesort call krte ha aur phir dono ko 
+      merge krte ha
+5) Quick sort
+    - ye bhi divide and conquer approach hai, ismein ek range mein quicksort ko call krte ha, last element ko pivot le lete ha,
+      phir partition function call krte ha us range mein, partition function return krta ha woh index jahan pe pivot element ko
+      shi mein hona chahiye array sort ho jane ke bad, aur uske left mein pivot se chote element hote ha aur uske right mein usse bare 
+      element hote ha.
+      phir quicksort phirse call krte ha quicksort(l,p-1) pe aur quicksort(p+1,r) pe yahan pe p returned value hai partition fun ka
+6) Counting sort
+    - ismein hame range pata hota ha element ki value kis range ke ander ha, so ham counting array bana lete ha sare element ka
+      occurrance count kr lete ha, aur uska prefix sum nikal lete ha, ab prefix array har element ka index bata rha ha sorted 
+      array mein, so abhi jo array given the usmein iterate kr aur jo bhi element aa rha ha uska index prefix array mein se dekh le,
+      abhi woh element us index pe likhne ke baad us element ka value prefix array mein 1 se decrease kr de.
+7) Heap sort   
+    - element are pushed in binary heap(which is a complete binary tree which has all nodes vale greater then or less the all of it's child)
+      , we take last element from heap and thus we get the max element.
+      
