@@ -1,0 +1,1 @@
+1) Learned MySQL commands and practiced code for different variation of SELECT command
